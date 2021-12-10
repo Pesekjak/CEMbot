@@ -46,6 +46,10 @@ public class MessageListener extends ListenerAdapter {
         }
 
         else if (args[1].equalsIgnoreCase("playing")) {
+            if(Melody.getPlayersManager().getActivePlayers().containsKey(guild)) {
+                ReplyUtil.ErrorReply(channel, message, "No Active Player", "Currently no song is playing.");
+                return;
+            }
             String[] videoID = Melody.getPlayersManager().getActivePlayers().get(guild).getTrackPlayer().getPlayingTrack().getUrl().split("=");
             String thumbnail = "https://img.youtube.com/vi/" + videoID[1] + "/mqdefault.jpg";
             ReplyUtil.Reply(channel, message, "Current song", "Name: **" + Melody.getPlayersManager().getActivePlayers().get(guild).getTrackPlayer().getPlayingTrack().getName() + "**\nLink: " + Melody.getPlayersManager().getActivePlayers().get(guild).getTrackPlayer().getPlayingTrack().getUrl(), thumbnail);
