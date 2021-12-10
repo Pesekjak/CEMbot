@@ -46,7 +46,7 @@ public class MessageListener extends ListenerAdapter {
         }
 
         else if (args[1].equalsIgnoreCase("playing")) {
-            if(Melody.getPlayersManager().getActivePlayers().containsKey(guild)) {
+            if(!(Melody.getPlayersManager().getActivePlayers().containsKey(guild))) {
                 ReplyUtil.ErrorReply(channel, message, "No Active Player", "Currently no song is playing.");
                 return;
             }

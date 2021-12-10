@@ -15,7 +15,7 @@ import javax.security.auth.login.LoginException;
 
 public class Melody {
 
-    private final static String token = "BOT_TOKEN";
+    private final static String token = "OTE4NTQ5MDIxNzYzNzExMDM4.YbI3cA.1-RUCrZZO6LrGX8GcwJVSQh7lxY";
     private final static JDABuilder builder = defaultBuilder();
     private final static PlayersManager playersManager = new PlayersManager();
     private static JDA jda = null;
