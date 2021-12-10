@@ -15,7 +15,7 @@ Edit ```songs.yaml``` to add more songs or remove them.
 
 ---
 
-##How does it work?
+## How does it work?
 
 You connect to the voice channel, run join command and bot will automatically start playing music.
 It will stop after all users in the channel leave and currently played song ends.
