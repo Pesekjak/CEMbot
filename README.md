@@ -1,4 +1,4 @@
-# CEMbot
+# CEMbot (Careless Endless Melody)
 Just an average bot, playing songs to self isolate to.
 
 ## Running the bot
@@ -16,7 +16,6 @@ Edit ```songs.yaml``` to add more songs or remove them.
 ---
 
 ## How does it work?
-
 You connect to the voice channel, run join command and bot will automatically start playing music.
 It will stop after all users in the channel leave and currently played song ends.
 Bot will start playing again after someone joins the channel again.
